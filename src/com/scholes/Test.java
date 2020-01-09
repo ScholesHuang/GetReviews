@@ -60,7 +60,7 @@ public class Test {
 	
 	private static String getWebSiteViaProxy(){
 		// TODO Auto-generated method stub
-		String proxyIp = "intpxy1.hk.hsbc";
+		String proxyIp = "xxxxxx";
 		int proxyPort = 8080;
 		HttpHost target = new HttpHost("itunes.apple.com", 80, "http");
         HttpHost proxy = new HttpHost(proxyIp, proxyPort);
@@ -68,7 +68,7 @@ public class Test {
 		CredentialsProvider credsProvider = new BasicCredentialsProvider();
         credsProvider.setCredentials(
                 new AuthScope(proxyIp, proxyPort),
-                new UsernamePasswordCredentials("43551416", "schabc680^*)"));
+                new UsernamePasswordCredentials("xxxxxx", "xxxxxx"));
         CloseableHttpClient httpclient = HttpClients.custom()
                 .setDefaultCredentialsProvider(credsProvider).build();
         
